@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Jost:wght@400;700&display=swap"
+        rel="stylesheet"/>
+    <title>ToDo</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span>To</span>Do</h1>
+            <div class="row">
+                <input type="text" placeholder="What do you think about?" class="title">
+                <input type="datetime" placeholder="Deadline date" class="date">
+                <select name="department" id="department">
+                    <option value="personal" selected>Personal</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="work">Work</option>
+                </select>
+
+                <button class="add-btn">ADD <i class="fa-solid fa-circle-plus"></i></button>
+                <span class="check-span"></span>
+            </div>
+    
+        </div>
+    </header>
+    <section id="tasks">
+        <h2>Taskes: </h2>
+        <div class="row">
+            <div class="item">
+                <div class="h">
+                    <i class="fa-solid fa-circle circle"></i>
+                <h3 id="h3"></h3>
+                <span></span>
+                <span class="category-span"></span>
+            </div>
+                <div class="btns">
+                    <i class="fa-regular fa-pen-to-square btn-edit"></i>
+                    <i class="fa-regular fa-trash-can btn-del"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
